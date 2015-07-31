@@ -1,0 +1,30 @@
+[user]
+    name = Igor Ivanov
+    email = Igor.Ivanov@itseez.com
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+# List all tags
+    tags = tag -l
+# View a pretty git log with branch tree
+    view = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[core]
+    trustctime = false
+# make sure text files bear LF line endings on checkouts
+# convert to LF
+    eol = lf
+    autocrlf = input
+# Whitespace detection:
+# - Spaces at the end of a line
+# - Spaces before tabs at the beginning of a line
+    whitespace = trailing-space,space-before-tab
+
+[http]
+    sslVerify = false
+
+[apply]
+    whitespace = fix
+
